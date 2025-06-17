@@ -4,4 +4,9 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "armonik-cli-core",
+]
+
+[tool.uv.sources]
+armonik-cli-core = { git = "https://github.com/aneoconsulting/ArmoniK.CLI.git", subdirectory = "packages/armonik_cli_core", rev = "ad/extension-support" }
